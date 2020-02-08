@@ -1,0 +1,22 @@
+<!document html>
+<html>
+<body onload="alert('Hello World')">
+<script type='text/javascript'>
+function myvalue(){
+var myvalue = document.getElementById('Inputid').value;
+if (myvalue.length == 0){
+alert('Please eneter a real value') ;  
+return; 
+}
+var mytitle = document.getElementById('title');
+mytitle.innerHTML= myvalue;
+}
+</script>
+<input type="text" id="Inputid"/>
+<input type="button" value="Submit" onclick="myvalue()"/>
+<head>
+<title> my javascript </title>
+<h1 id="title"> my java  </h1>
+</head>
+</body>
+</html>
